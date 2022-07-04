@@ -4,29 +4,29 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png" />
-		<title>Article preview component</title>
+		<link rel="stylesheet" href="./css/resetPro.css">
 		<link rel="stylesheet"  href="./css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/ba3e6970e1.js" crossorigin="anonymous"></script>
+		<title>Article preview component</title>
 	</head>
 	<body>
 		<main class="card">
-			<img class="card-header" src="./images/drawers.jpg" alt="image-drawes"/>
-			<section class="card-mine">
-				<h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-				<p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
-			</section>
-			<section class="card-footer" id="cardFooter">
-				<div class="card-footer__avatar">
-					<span></span>
-				</div>
-				<div class="card-footer__data">
-					<h2>Michelle Appleton</h2>
-					<h2>28 Jun 2020</h2>
-				</div>
-				<div class="card-footer__share">
-					<img src="./images/icon-share.svg" alt="icono-share">
+			<img class="card-img" src="./images/drawers.jpg" alt="image-drawes"/>
+			
+			<section class="card-content" id="cardFooter">
+				<h1  class="card-content__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+				<p   class="card_content__paragraph">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+				
+				<div class="card-footer">
+					<div class="card-footer__profile">
+						<span></span>
+						<h2>Michelle Appleton</h2>
+						<h2>28 Jun 2020</h2>
+					</div>
+					<i class="fa-solid fa-share"></i>
 				</div>
 			</section>
 		</main>
