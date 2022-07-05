@@ -41,7 +41,8 @@ body{
 }
 .card-img{
     width: 100%;
-    height: auto;
+    height: 215px;
+    object-fit: cover;
 }
 .card-content{
     display: flex;
@@ -51,12 +52,12 @@ body{
     gap: 15px;
 }
 .card-content__title{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--veryDarkGrayishBlue);
 }
 .card_content__paragraph{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--DesaturatedDarkBlue);
 }
