@@ -61,16 +61,22 @@ body{
     color: var(--DesaturatedDarkBlue);
 }
 
+
+
+/* CARD FOOTER  */
 .card-footer{
-    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 50px;
-    margin: 15px 0 15px 0;
+    padding: 0 33px 0 33px;
+    height: 60px;
+    margin: 0px 0 10px 0;
 }
+
+
+/* CONTENT PROFILE ACTIVE  */
 .card-footer__profile{
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -88,7 +94,6 @@ body{
     border-radius: 25px;
     margin: 0 15px 0 0;
 }
-
 .card-footer__profile h2:nth-child(2){
     font-size: 1.3rem;
     font-weight: 700;
@@ -101,32 +106,10 @@ body{
     color: var(--DesaturatedDarkBlue); 
     align-self: flex-start;
 }
-.card-footer .fa-share{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--veryDarkGrayishBlue);
-    font-size: 1.6rem;
-    width: 30px;
-    height: 30px;
-    background-color: var(--LightGrayishBlue);
-    border-radius: 15px;
-    cursor: pointer;
-}
-.card-footer_checkbox{
-    position: absolute;
-    display: none;
-}
-.card-footer_checkbox:checked + label .fa-share{
-    color: var(--white);
-    background-color: var(--DesaturatedDarkBlue);
-}
 
-
-/* SHARE ACTIVE  */
-.card-footer--share{
+/* CONTENT SHARE ACTIVE  */
+.card-footer__share{
     opacity: 0;
-    z-index: 0;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -139,17 +122,39 @@ body{
     background-color: var(--veryDarkGrayishBlue);
     padding: 0 32px 0 32px;
 }
-.card-footer--share p{
+.card-footer__share p{
     font-size: 1.4rem;
     color: var(--GrayishBlue);
     letter-spacing: 7px;
 }
-.card-footer--share i{
+.card-footer__share i{
     font-size: 2.2rem;
     color: var(--white); 
 }
 
 
+/* ICON SHARE  */
+.card-footer .fa-share{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--veryDarkGrayishBlue);
+    font-size: 1.6rem;
+    width: 30px;
+    height: 30px;
+    background-color: var(--LightGrayishBlue);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.card-footer__checkbox{
+    position: absolute;
+    display: none;
+}
+.card-footer__checkbox:checked + label .fa-share{
+    color: var(--white);
+    background-color: var(--DesaturatedDarkBlue);
+}
 
 
 
