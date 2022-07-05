@@ -3,7 +3,8 @@
     --veryDarkGrayishBlue: hsl(217, 19%, 35%);
     --DesaturatedDarkBlue: hsl(214, 17%, 51%);
     --GrayishBlue: hsl(212, 23%, 69%);
-    --LightGrayishBlue: hsl(210, 46%, 95%);    
+    --LightGrayishBlue: hsl(210, 46%, 95%);  
+    --white: #fff;  
 }
 *{
     margin: 0;
@@ -11,14 +12,139 @@
     box-sizing: border-box;
 }
 html{
-    font-family: 'Manrope', sans-serif;
-    font-size: 62.5%;
+    background-color: var(--GrayishBlue);
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+/* CARD  */
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 13px;
+    overflow: hidden;
+    gap: 30px;
+}
+.card-img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    gap: 15px;
+}
+.card-content__title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--veryDarkGrayishBlue);
+}
+.card_content__paragraph{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--DesaturatedDarkBlue);
+}
+
+.card-footer{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0 15px 0;
+}
+.card-footer__profile{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+.card-footer__profile span{
+    grid-area: 1 / 1 / 3 / 2;
+    width: 40px;
+    height: 40px;
+    content: "";
+    background-image: url(../images/avatar-michelle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 25px;
+    margin: 0 15px 0 0;
+}
+
+.card-footer__profile h2:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--veryDarkGrayishBlue);
+    align-self: flex-end;
+}
+.card-footer__profile h2:nth-child(3){
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--DesaturatedDarkBlue); 
+    align-self: flex-start;
+}
+.card-footer i.fa-share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--veryDarkGrayishBlue);
+    font-size: 1.6rem;
+    width: 30px;
+    height: 30px;
+    background-color: var(--LightGrayishBlue);
+    border-radius: 15px;
+}
+.card-footer i.fa-share:hover{
+    color: var(--white);
+}
+
+/* SHARE ACTIVE  */
+.card-footer--share{
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--veryDarkGrayishBlue);
+    padding: 0 32px 0 32px;
+}
+.card-footer--share p{
+    font-size: 1.4rem;
+    color: var(--GrayishBlue);
+    letter-spacing: 7px;
+}
+.card-footer--share i{
+    font-size: 2.2rem;
+    color: var(--white); 
 }
 
 
 
 
 
-/* https://www.youtube.com/watch?v=7YEPdq8QuTo */
 
 /* D:\Documents\Study\Programming\Frontend Mentor\7 - Article preview component\design */

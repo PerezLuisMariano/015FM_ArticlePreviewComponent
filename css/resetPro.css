@@ -2,8 +2,8 @@
 :root{
     --colorMine   : rgb(22, 22, 22);
     --colorSecond : #fff;
-    --fontMain    : "Karla", sans-serif;
-    --fontSecond  : "Karla", sans-serif; 
+    --fontMain    : 'Manrope', sans-serif;
+    --fontSecond  : 'Manrope', sans-serif;
 }
 
 /* DARK MODE BY USER */
@@ -83,7 +83,7 @@ blockquote::before, blockquote::after, q::before,q::after{
 
 /* TEXT SELECTION*/
 ::selection{
-    background-color : var(--colorMine);
+    background-color : hsl(217, 19%, 35%);
     color            : var(--colorSecond);
 }
 
