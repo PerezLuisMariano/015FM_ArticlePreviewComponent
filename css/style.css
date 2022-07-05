@@ -101,7 +101,7 @@ body{
     color: var(--DesaturatedDarkBlue); 
     align-self: flex-start;
 }
-.card-footer i.fa-share{
+.card-footer .fa-share{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,9 +112,14 @@ body{
     background-color: var(--LightGrayishBlue);
     border-radius: 15px;
 }
-.card-footer i.fa-share:hover{
+.card-footer_checkbox{
+    position: absolute;
+    display: none;
+}
+.card-footer_checkbox:checked + label .fa-share{
     color: var(--white);
 }
+
 
 /* SHARE ACTIVE  */
 .card-footer--share{
