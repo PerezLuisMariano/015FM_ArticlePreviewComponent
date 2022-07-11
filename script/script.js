@@ -11,7 +11,7 @@ function activate() {
     if(input.checked){
         console.log("yes")
         contentShareActivate.style.opacity = "100";
-        contentProfileActivate.style.opacity = "0";
+        contentProfileActivate.style.opacity = "100";
     }else{
         console.log("no")
         contentShareActivate.style.opacity = "0";
