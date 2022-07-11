@@ -1,11 +1,13 @@
 ## Frontend Mentor - Article preview component
 
 ### Screenshot
-![version-desk](design/me/)
+![version-desk](design/design.png)
 
 
 ### Links
-- [Live Site ](https://perezluismariano.github.io//)
+- [Live Site ](https://perezluismariano.github.io/015FM_ArticlePreviewComponent/)
+
+
 
 ### Built with
 - Semantic HTML5 markup
